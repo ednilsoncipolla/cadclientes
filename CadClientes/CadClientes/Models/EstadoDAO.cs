@@ -7,5 +7,6 @@ namespace CadClientes.Models
 {
     public class EstadoDAO
     {
+
     }
 }
