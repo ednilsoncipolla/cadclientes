@@ -137,6 +137,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BDSqlServer.cs" />
+    <Compile Include="Models\Estado.cs" />
+    <Compile Include="Models\EstadoDAO.cs" />
+    <Compile Include="Models\EstadoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +154,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Documentacao\CadClientes MER.pdf" />
+    <Content Include="Documentacao\CadClientesMER.dm2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -161,6 +167,18 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="SQL\spCidadesAlterar.sql" />
+    <Content Include="SQL\spCidadesExcluir.sql" />
+    <Content Include="SQL\spCidadesIncluir.sql" />
+    <Content Include="SQL\spClientesAlterar.sql" />
+    <Content Include="SQL\spClientesExcluir.sql" />
+    <Content Include="SQL\spClientesIncluir.sql" />
+    <Content Include="SQL\spEstadoAlterar.sql" />
+    <Content Include="SQL\spEstadoExcluir.sql" />
+    <Content Include="SQL\spEstadoIncluir.sql" />
+    <Content Include="SQL\vwCidades.sql" />
+    <Content Include="SQL\vwClientes.sql" />
+    <Content Include="SQL\vwEstados.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -178,7 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -5,7 +5,13 @@ using System.Web;
 
 namespace CadClientes.Models
 {
-    public class EstadoService
+    public static class EstadoService
     {
+        public static Estado GetEstado()
+        {
+            return new Estado();
+        }
+
+
     }
 }
