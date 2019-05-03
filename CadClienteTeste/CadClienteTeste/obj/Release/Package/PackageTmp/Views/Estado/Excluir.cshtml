@@ -1,0 +1,49 @@
+﻿@model CadClientes.Models.Estado
+
+@{
+    ViewBag.Title = "Excluir Estado";
+}
+
+<h2>Excluir</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Estado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Est_UF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Est_UF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Est_Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Est_Nome)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            @Html.HiddenFor(model => model.Est_UF, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.Est_UF, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Est_UF, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Retornar a Lista", "Index")
+        </div>
+    }
+</div>

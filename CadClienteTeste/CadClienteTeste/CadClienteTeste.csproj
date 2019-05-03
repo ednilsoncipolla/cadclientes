@@ -147,6 +147,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Documentacao\CadClientes MER.pdf" />
     <Content Include="Documentacao\CadClientesMER.dm2" />
+    <None Include="Properties\PublishProfiles\cadclientes - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
