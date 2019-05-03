@@ -19,7 +19,7 @@ CREATE PROCEDURE spClientesIncluir
 AS
 BEGIN
 
-    Insert into Cidades (
+    Insert into Clientes (
 		Est_UF
 		, Cid_CodIBGE
 		, Cli_Nome

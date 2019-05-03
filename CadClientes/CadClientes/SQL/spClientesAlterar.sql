@@ -20,7 +20,7 @@ CREATE PROCEDURE spClientesAlterar
 AS
 BEGIN
 
-    Update Cidades set 
+    Update Clientes set 
 		Est_UF = @UF
 		, Cid_CodIBGE = @Cid_CodIBGE
 		, Cli_Nome = @Cli_Nome

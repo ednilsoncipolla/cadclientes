@@ -133,13 +133,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EstadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BDSqlServer.cs" />
     <Compile Include="Models\Estado.cs" />
-    <Compile Include="Models\EstadoDAO.cs" />
+    <Compile Include="Models\EstadoRepository.cs" />
     <Compile Include="Models\EstadoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -167,6 +168,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="SQL\Cidades.sql" />
+    <Content Include="SQL\Clienrtes.sql" />
+    <Content Include="SQL\Estados.sql" />
     <Content Include="SQL\spCidadesAlterar.sql" />
     <Content Include="SQL\spCidadesExcluir.sql" />
     <Content Include="SQL\spCidadesIncluir.sql" />
@@ -193,6 +197,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Estado\Index.cshtml" />
+    <Content Include="Views\Estado\Novo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
