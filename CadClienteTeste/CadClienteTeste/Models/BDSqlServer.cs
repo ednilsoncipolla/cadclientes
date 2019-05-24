@@ -11,7 +11,7 @@ namespace BDSqlServer
 {
     public class BD
     {
-        public static string sConexao = "Server=tcp:sqlserver,1433;Initial Catalog=iEquipe;Persist Security Info=False;User ID=edycipolla;Password=senha;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        public static string sConexao = "Server=tcp:srvbdiequipe.database.windows.net,1433;Initial Catalog=iEquipe;Persist Security Info=False;User ID=edycipolla;Password=153759@edy;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         public static bool testaConexao()
         {
