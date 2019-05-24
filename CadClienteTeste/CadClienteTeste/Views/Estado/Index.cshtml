@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CadClientes.Models.Estado>
+
+@{
+    ViewBag.Title = "Lista de Estados";
+}
+
+    <h2>Lista de Estados</h2>
+
+<p>
+    @Html.ActionLink("Novo Estado", "Novo")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Est_UF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Est_Nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Est_UF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Est_Nome)
+        </td>
+        <td>
+            @Html.ActionLink("Alterar", "Alterar", new { est_UF = item.Est_UF }) |
+            @Html.ActionLink("Detalhes", "Detalhes", new { est_UF = item.Est_UF }) |
+            @Html.ActionLink("Excluir", "Excluir", new { est_UF = item.Est_UF  })
+        </td>
+    </tr>
+}
+
+</table>

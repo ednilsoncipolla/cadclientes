@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CadClientes.Models.Estado>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Novo Estado", "Novo")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Est_UF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Est_Nome)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Est_UF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Est_Nome)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Detalhes", "Detalhes", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Excluir", "Excluir", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
